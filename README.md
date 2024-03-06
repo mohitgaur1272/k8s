@@ -20,6 +20,11 @@ kubectl rollout history deployment/nginx-deployment
 kubectl rollout undo deployment/nginx-deployment
 ```
 
+### if you want to go your previous version of your image so use this command 
+```
+kubectl rollout undo deployment/nginx-deployment --to-revision=no
+```
+
 # Scaling a Deployment
 ### You can scale a Deployment by using the following command:
 ```
