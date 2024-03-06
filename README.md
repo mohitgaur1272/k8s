@@ -36,4 +36,8 @@ kubectl scale deployment/nginx-deployment --replicas=10
 kubectl autoscale deployment/nginx-deployment --min=10 --max=15 --cpu-percent=80
 ```
 
+### if you want to see all resources
+```
+kubectl  explain --recursive  pod/deployment  | less
+```
 
