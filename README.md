@@ -5,6 +5,12 @@ kubectl config set-context --current --namespace=newspace
 kubectl get all
 ```
 
+if you want to chnage image from yout terminal so use this command 
+```
+ sudo sed -i 's|<old-image-name-with-tag>|<new-image-name-with-tag>|g' <your-yaml-file.yaml>
+```
+
+
 ## for image change in deployment by this command 
 ```
 kubectl set image deployment/nginx-deployment nginx=nginx:1.16.1
