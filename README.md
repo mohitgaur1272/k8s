@@ -1,4 +1,10 @@
 # k8s
+go youy name space and see all 
+```
+kubectl config set-context --current --namespace=newspace
+kubectl get all
+```
+
 ## for image change in deployment by this command 
 ```
 kubectl set image deployment/nginx-deployment nginx=nginx:1.16.1
