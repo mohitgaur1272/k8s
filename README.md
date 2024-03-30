@@ -1,11 +1,11 @@
 # k8s
-go youy name space and see all 
+go your name space and see all 
 ```
 kubectl config set-context --current --namespace=newspace
 kubectl get all
 ```
 
-if you want to chnage image from yout terminal so use this command 
+if you want to change image from your terminal so use this command 
 ```
  sudo sed -i 's|<old-image-name-with-tag>|<new-image-name-with-tag>|g' <your-yaml-file.yaml>
 ```
@@ -16,6 +16,7 @@ if you want to chnage image from yout terminal so use this command
 kubectl set image deployment/nginx-deployment nginx=nginx:1.16.1
 ```
 change your deployment name and image name 
+
 ### if you want to see rollout status so use this command
 ```
 kubectl rollout status deployment/nginx-deployment
